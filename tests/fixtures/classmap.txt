@@ -1,0 +1,3 @@
+# entry -> class, for names that carry no class
+BareBeta Base
+MappedToNowhere NoSuchClass

@@ -1,0 +1,19 @@
+name: Bug
+description: A crash, an error on a valid file, a file written wrongly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command, the full output, what you expected. Name the builds by version; do not attach game binaries.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: gamedata-doctor version and system
+      placeholder: "gamedata-doctor 0.1.0, Ubuntu 24.04"
+    validations:
+      required: true

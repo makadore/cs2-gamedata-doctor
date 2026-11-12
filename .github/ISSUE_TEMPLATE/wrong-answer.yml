@@ -1,0 +1,40 @@
+name: Wrong answer
+description: The tool placed an index, a signature or a header finding wrongly, or was sure about something that is not so
+labels: ["wrong answer"]
+body:
+  - type: input
+    id: builds
+    attributes:
+      label: Builds
+      description: Old and new build (PatchVersion and ServerVersion from steam.inf, or depot manifest ids) and the platform. Do not attach the binaries.
+      placeholder: "1.41.9.6 -> 1.41.9.7-2000943, linux"
+    validations:
+      required: true
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      description: The gamedata entry (and the project it is from), or the class and function
+      placeholder: "CounterStrikeSharp: CCSPlayer_ItemServices_GiveNamedItem"
+    validations:
+      required: true
+  - type: textarea
+    id: said
+    attributes:
+      label: What the tool said
+      description: The command and the output line (or the --json row)
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: What is right, and how you know
+      description: The maintainers' commit, a disassembler, a crash
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: gamedata-doctor version
+      placeholder: "gamedata-doctor --version"

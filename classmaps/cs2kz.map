@@ -1,0 +1,18 @@
+# cs2kz-metamod gamedata/cs2kz-core.games.txt: offset names do not carry the class.
+# Classes taken from where the code uses each offset (src/sdk/entity/*.h, src/utils/hooks.cpp).
+IsEntityPawn CBaseEntity
+IsEntityController CBaseEntity
+CollisionRulesChanged CBaseEntity
+StartTouch CBaseEntity
+Touch CBaseEntity
+EndTouch CBaseEntity
+Teleport CBaseEntity
+EntityPhysicsSimulate CBaseEntity
+CommitSuicide CBasePlayerPawn
+PassesTriggerFilters CBaseTrigger
+ControllerChangeTeam CCSPlayerController
+ControllerRespawn CCSPlayerController
+Respawn CCSPlayerPawn
+PlayerRunCommand CCSPlayer_MovementServices
+FinishMove CCSPlayer_MovementServices
+IsValidObserverTarget CPlayer_ObserverServices

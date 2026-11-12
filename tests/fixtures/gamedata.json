@@ -1,0 +1,47 @@
+{
+  "Base_beta": {
+    "offsets": { "linux": 3, "windows": 2 }
+  },
+  "Derived_zeta": {
+    "offsets": { "linux": 7, "windows": 6 }
+  },
+  "Thing_four": {
+    "offsets": { "linux": 5, "windows": 4 }
+  },
+  "Twins_left": {
+    "offsets": { "linux": 2, "windows": 1 }
+  },
+  "Solo_only": {
+    "offsets": { "linux": 2, "windows": 1 }
+  },
+  "BareBeta": {
+    "offsets": { "linux": 3, "windows": 2 }
+  },
+  "MappedToNowhere": {
+    "offsets": { "linux": 1, "windows": 1 }
+  },
+  "IThing_two": {
+    "offsets": { "linux": 3, "windows": 2 }
+  },
+  "IExtra_extra": {
+    "offsets": { "linux": 2, "windows": 1 }
+  },
+  "VBase_v": {
+    "offsets": { "linux": 2, "windows": 1 }
+  },
+  "INotHere::Method": {
+    "offsets": { "linux": 4, "windows": 4 }
+  },
+  "Base_field": {
+    "offsets": { "linux": 104, "windows": 104 }
+  },
+  "Unknown_Thing": {
+    "offsets": { "linux": 1, "windows": 1 }
+  },
+  "IHalf_real": {
+    "offsets": { "linux": 2, "windows": 1 }
+  },
+  "SomeSignature": {
+    "signatures": { "library": "server", "linux": "55 48 89 E5", "windows": "40 53" }
+  }
+}

@@ -1,0 +1,5 @@
+# CounterStrikeSharp gamedata.json: entries that are offsets of fields, not virtual-table
+# indices (read as `object + offset` in the source). A dash takes an entry out of scope.
+GameEntitySystem -           # cgameresourceserviceserver.h: this + offset
+CheckTransmitPlayerSlot -    # CCheckTransmitInfo.cs: a field of the transmit info
+CTakeDamageInfo_HitGroup -   # CTakeDamageInfo.cs: Marshal.ReadIntPtr(Handle, offset)

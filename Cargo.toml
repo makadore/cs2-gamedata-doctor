@@ -1,0 +1,25 @@
+[package]
+name = "gamedata-doctor"
+version = "0.1.0"
+edition = "2021"
+description = "Tells a CS2 plugin developer what a game update broke: vtable offsets and byte signatures in gamedata, SDK headers, and where a plugin uses them"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+cpp_demangle = "0.4"
+gimli = { version = "0.31", default-features = false, features = ["read", "std"] }
+goblin = "0.9"
+iced-x86 = { version = "1.21", default-features = false, features = ["std", "decoder", "instr_info"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+similar = "2"
+xxhash-rust = { version = "0.8", features = ["xxh3"] }
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[profile.release]
+opt-level = 3
+debug = false
